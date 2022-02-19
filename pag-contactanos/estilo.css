@@ -44,14 +44,24 @@ ul {
 
 ul li a {
     display:inline-block;
-    padding: 20px 40px;
+    padding: 20px 20px;
     font-size:1.3rem;
     color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:active {
 background: #4141ef;
-
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
 }
 
 .content-header {

@@ -44,14 +44,24 @@ ul {
 
 ul li a {
     display:inline-block;
-    padding: 20px 40px;
+    padding: 20px 20px;
     font-size:1.3rem;
     color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:active {
 background: #4141ef;
-
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
 }
 
 .content-header {
@@ -75,15 +85,22 @@ background: #4141ef;
 }
 
 .content-header a {
-    font-size: 1.3rem;
     display: inline-block;
-    padding: 15px 20px;
-    background: #4141ef;
+    width: 200px;
+    padding: 8px;
     color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
 }
 
-.content-header a:hover {
-    background: #6060f1;
-    border: 2px solid #fff;
-    padding: 13px 18px;
+.content-header a:hover,
+.content-header:active  {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
 }
