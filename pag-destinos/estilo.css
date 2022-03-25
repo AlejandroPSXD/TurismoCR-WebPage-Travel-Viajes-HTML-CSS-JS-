@@ -25,7 +25,7 @@ html, body{
     
     display: flex;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 5;
 }
@@ -82,7 +82,11 @@ background: #4141ef;
 
 .content-header h1 {
     font-size: 34px;
+<<<<<<< HEAD
+    height: 400;
+=======
     font-weight: 400;
+>>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
     text-align: center;
 }
 
@@ -123,7 +127,11 @@ background: #4141ef;
     justify-content: center;
     margin: auto;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
 }
 
 .container .card {
@@ -135,7 +143,11 @@ background: #4141ef;
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+<<<<<<< HEAD
+    background-color: rgba(0, 0, 0, 0.473);
+=======
     background-color: rgba(0, 0, 0, 0.356);
+>>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
 
 }
 
@@ -165,8 +177,11 @@ background: #4141ef;
     color: #fff;
     letter-spacing: 0.03em;
 
+<<<<<<< HEAD
+=======
     
 
+>>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
 }
 
 .container .card a {
@@ -174,4 +189,14 @@ background: #4141ef;
     text-decoration: none;
     color: #3498db;
     padding: 1000px 1000px;
+<<<<<<< HEAD
+
 }
+
+.container .card .p {
+
+    font-weight: bold;
+}
+=======
+}
+>>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
