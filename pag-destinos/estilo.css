@@ -10,7 +10,7 @@ html, body{
 }
 
 .main-header {  /*Encabezado logo, destinos, inicio,etc*/
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),
         url("../Imagenes/Monteverde.jpg");
         background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +25,7 @@ html, body{
 .main-nav {
     
     display: flex;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0,0,0,0.7));
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -65,7 +65,7 @@ ul li a {
 ul li a:hover, 
 ul li a:active {
 background: #4141ef;
-    background-color: rgba(230, 24, 24, 0.13);
+    background-color: rgba(0, 0, 0, 0.13);
     color: #fff;
     transition: background-color 0.3s ease-in,
                 color 0.3s ease-in;
