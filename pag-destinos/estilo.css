@@ -9,7 +9,7 @@ html, body{
     box-sizing: border-box;
 }
 
-.main-header {
+.main-header {  /*Encabezado logo, destinos, inicio,etc*/
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
         url("../Imagenes/Monteverde.jpg");
         background-repeat: no-repeat;
@@ -21,6 +21,7 @@ html, body{
     overflow: hidden;
 }
 
+/* Menú de navegacion Inicio,Desti... */
 .main-nav {
     
     display: flex;
@@ -30,8 +31,8 @@ html, body{
     z-index: 5;
 }
 
-.logo {
-    
+.logo {  /*Logo*/
+     
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,7 @@ html, body{
     color: #fff;
 }
 
-ul {
+ul {  /*Lista de botones */
     
     display: flex;
     margin-left: auto;
@@ -56,20 +57,21 @@ ul li a {
     border: 2px solid rgba(255, 255, 255, 0);
     text-align: center;
     outline: none;
-    text-decoration: underline;
+    text-decoration: none;
     transition: background-color 0.2s ease-out,
                 color 0.2s ease-out;
 }
 
-ul li a:hover,
+ul li a:hover, 
 ul li a:active {
 background: #4141ef;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(230, 24, 24, 0.13);
     color: #fff;
     transition: background-color 0.3s ease-in,
                 color 0.3s ease-in;
 }
 
+/* Header (Parte central) */
 .content-header {
     color: #fff;
     position: absolute;
@@ -77,36 +79,12 @@ background: #4141ef;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
 }
 
-.content-header h1 {
+.content-header h1 { /*Destinos*/
     font-size: 34px;
-<<<<<<< HEAD
     height: 400;
-=======
-    font-weight: 400;
->>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
     text-align: center;
-}
-
-.content-header p {
-    font-size: 1.5rem;
-    margin: 15px 30px;
-}
-
-
-.content-header a {
-    display: inline-block;
-    width: 200px;
-    padding: 8px;
-    color: #fff;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    transition: background-color 0.2s ease-out,
-                color 0.2s ease-out;
 }
 
 .content-header a:hover,
@@ -117,6 +95,7 @@ background: #4141ef;
                 color 0.3s ease-in;
 }
 
+/*Container 1*/
 .container {
     width: 100%;
     max-width: 1200px;
@@ -127,11 +106,7 @@ background: #4141ef;
     justify-content: center;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
+  
 }
 
 .container .card {
@@ -143,11 +118,7 @@ background: #4141ef;
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
-<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.473);
-=======
-    background-color: rgba(0, 0, 0, 0.356);
->>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
 
 }
 
@@ -177,11 +148,6 @@ background: #4141ef;
     color: #fff;
     letter-spacing: 0.03em;
 
-<<<<<<< HEAD
-=======
-    
-
->>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
 }
 
 .container .card a {
@@ -189,7 +155,6 @@ background: #4141ef;
     text-decoration: none;
     color: #3498db;
     padding: 1000px 1000px;
-<<<<<<< HEAD
 
 }
 
@@ -197,6 +162,146 @@ background: #4141ef;
 
     font-weight: bold;
 }
-=======
+
+/*Container 2*/
+.container2 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url("../Imagenes/lapa\ roja.jpg");
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  
 }
->>>>>>> 41a189dea55b7041326101b7b7f25ef0dd0cd090
+.container2 .card {
+    width: 530px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(0, 0, 0, 0.473);
+
+}
+
+.container2 .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container2 .card img {
+    width: 530px;
+    height: 270px;
+    margin-bottom: 10px;
+}
+
+.container2 .card h4 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.container2 .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.03em;
+
+}
+
+.container2 .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    padding: 1000px 1000px;
+
+}
+
+.container2 .card .p {
+    font-weight: bold;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #000000f3;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 25px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Alinear horizontal */
+    align-items: center; /* Alinear vertical */
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px; /* Tamaño de la imagen */
+}
+
+.pie-pagina .grupo-1 .box h2{ /* Sobre nosotros */
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{ /* Párrafo */
+    color: #efefef;
+}
+
+.pie-pagina .grupo-1 .red-social a{ /* Iconos de links */
+    display: inline-block;
+    text-decoration: none;
+    width: 45px; /* ancho */
+    height: 45px; /* alto */
+    line-height: 45px; 
+    color: #fff;
+    margin-right: 10px; /* Separacion entre iconos */
+    background-color: #00000079; /* Fondo del icono */
+    text-align: center;
+    transition: all 300ms ease; /*transicion para el hover*/
+}
+.pie-pagina .grupo-1 .red-social a:hover{ 
+    color: rgb(0, 119, 255);
+}
+.pie-pagina .grupo-2{ /*Área de Derechos Reservados*/
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{ /*Texto de DerRer*/
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){ /*Hacerlo Respoonsive*/
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
