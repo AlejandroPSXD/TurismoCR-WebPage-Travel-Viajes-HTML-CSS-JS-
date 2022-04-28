@@ -53,7 +53,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background-color: lightgreen;
 }
 /* -->  Termina scroll bar <-- */
 
@@ -111,7 +111,7 @@ ul li a:active {
 
 
 /* --> Empieza el heading <-- */
-section {
+.packages {
     padding: 5rem 10%;
 }
 
@@ -226,7 +226,7 @@ section {
 /* --> Termina el heading <-- */
 
 /*Encabezado logo, destinos, inicio,etc*/
-/*.main-header { 
+.tarjetas { 
     background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),
         url("../Imagenes/Monteverde.jpg");
         background-repeat: no-repeat;
@@ -236,12 +236,12 @@ section {
     font-family: 'Dosis', sans-serif;
     position: relative;
     overflow: hidden;
-}*/
+}
 
 
-/* Header (Parte central) 
-.content-header {
-    color: black;
+/* Tarjetas (Parte central) */
+.content-tarjet {
+    color: var(--white);
     position: absolute;
     top: 20%;
     left: 50%;
@@ -249,15 +249,15 @@ section {
     text-align: center;
 }
 
-.content-header h1 {
-    /*Destinos
+.content-tarjet h1 {
+    /*Destinos*/
     font-size: 34px;
     height: 400;
     text-align: center;
 }
 
-.content-header a:hover,
-.content-header:active {
+.content-tarjet a:hover,
+.content-tarjet:active {
     background-color: rgba(255, 255, 255, 0.13);
     color: #fff;
     transition: background-color 0.3s ease-in,
@@ -275,7 +275,6 @@ section {
     justify-content: center;
     margin: auto;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .container .card {
@@ -288,7 +287,6 @@ section {
     text-align: center;
     transition: all 0.25s;
     background-color: rgba(0, 0, 0, 0.473);
-
 }
 
 .container .card:hover {
@@ -316,7 +314,7 @@ section {
     font-weight: 300;
     color: #fff;
     letter-spacing: 0.03em;
-
+    font-weight: bold;
 }
 
 .container .card a {
@@ -324,17 +322,34 @@ section {
     text-decoration: none;
     color: #3498db;
     padding: 1000px 1000px;
-
 }
 
-.container .card .p {
 
-    font-weight: bold;
+/* --> Empieza el Inspírate <-- */
+.inspirate {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #90ee90;
 }
 
-/* Body */
+.inspirate .inspiratetxt h2 {
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 52px;
+    text-align: center;
+}
 
-
+.inspirate .inspiratetxt p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+}
+/* --> Termina el Inspírate <-- */
 
 /*Container 2*/
 .container2 {
@@ -405,31 +420,6 @@ section {
 
 .container2 .card .p {
     font-weight: bold;
-}
-
-/*Inspírate:::::::::::::::::*/
-.inspirate {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    background-color: #90ee90;
-}
-
-.inspirate .inspiratetxt h2 {
-    font-family: "DM Serif Text", serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 52px;
-    text-align: center;
-}
-
-.inspirate .inspiratetxt p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32;
-    line-height: 52px;
-    text-align: center;
 }
 
 /*:::::Pie de Pagina*/
