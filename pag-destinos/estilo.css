@@ -295,8 +295,6 @@ ul li a:active {
 }
 
 .inspirate-img {
-    background: #000000;
-    border-radius: 20px;
     float: left;
     margin-left: 100px;
     margin-right: 100px;
@@ -313,9 +311,17 @@ ul li a:active {
 }
 
 .inspirate-textos p{
+    color:#000000;
     padding: 10px 10px;
     font-weight: 900;
     font-size: 20px;
+    line-height: 32px;
+}
+
+.inspirate-img3 {
+    float: right;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* --> Termina el Inspírate <-- */
@@ -447,8 +453,8 @@ ul li a:active {
 }
 
 .containerCosteras .card {
-    width: 330px;
-    height: auto;
+    width: 250px;
+    height: 315px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -473,7 +479,7 @@ ul li a:active {
     font-weight: 600;
     color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 
@@ -484,7 +490,7 @@ ul li a:active {
     color: #fff;
     letter-spacing: 0.03em;
     font-weight: bold;
-    padding-bottom: 15px;
+    margin-top: 500px;
 }
 
 /* --> Terminan las tarjetas costeras <-- */
