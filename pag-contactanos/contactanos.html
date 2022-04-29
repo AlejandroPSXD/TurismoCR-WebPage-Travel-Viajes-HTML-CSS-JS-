@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,30 +20,33 @@
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pag-destinos/destinos.html">Destinos</a></li>
             <li><a href="../pag-promociones/promociones.html">Promociones</a></li>
-            <li><a href="../pag-contactanos/contactanos.html">Contáctanos</a></li> 
+            <li><a href="../pag-contactanos/contactanos.html">Contáctanos</a></li>
         </ul>
     </nav>
 </header>
+
 <body>
     <section class="formulario">
-        <form class="form" action="https://formspree.io/f/xyyobdnj"
-        method="POST"id="my-form">
-        <div class="container">
-            <div class="contact-box">
-                <div class="left"></div>
-                <div class="right">
-                    <h2>Contáctanos</h2>
-                    <input type="text" class="field" placeholder="Nombre:"name="name">
-                    <input type="email" class="field" placeholder="Email:"name="email">
-                    <textarea class="field" placeholder="Mensaje:"name="message"></textarea>
-                    <input type="submit" value="Enviar" class="form_cta">
+        <form class="form" action="https://formspree.io/f/xyyobdnj" method="POST" id="my-form">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contáctanos</h2>
+                        <input type="text" class="field" placeholder="Nombre:" name="name">
+                        <input type="email" class="field" placeholder="Email:" name="email">
+                        <textarea id="Mensajetxt" class="field" placeholder="Mensaje:" name="message"></textarea>
+                        <input type="submit" value="Enviar" class="form_cta">
+                        <hr>
+                        <input type="button" id="btnMostrarArreglo" value="Ayuda" class="btnMostrar" onclick="mostrarArreglo();"></input>
+                    </div>
                 </div>
+                <div class="resultado" id="resultado"></div>
             </div>
-        </div>
-            </form>
-            <div id="status"></div>
-        </section>
-        <script src="./main.js"></script>
+        </form>
+        <div id="status"></div>
+    </section>
+    <script src="./main.js"></script>
 </body>
 <!--::::Pie de Pagina::::::-->
 <footer class="pie-pagina">
@@ -75,6 +79,5 @@
         <small>&copy; 2022 <b>Turismo CR</b> - Todos los Derechos Reservados.</small>
     </div>
 </footer>
+
 </html>
-
-

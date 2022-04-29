@@ -141,7 +141,7 @@ textarea{
 	min-height: 150px;
 }
 
-.form_cta{
+.form_cta, .btnMostrar{
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
@@ -153,13 +153,25 @@ textarea{
 	transition: .3s;
 }
 
-.form_cta:hover{
+
+.form_cta:hover, .btnMostrar:hover{
     background-color: #27ae60;
 }
 
 .field:focus{
     border: 2px solid rgba(30,85,250,0.47);
     background-color: #fff;
+}
+
+.resultado{
+    width: 300px;
+    height: 100px;
+	border-radius: 10px;
+	background-color: lightgreen;
+	padding: 10px;
+    margin-left: 50px;
+	font-size: 1.1rem;
+    text-align: center;
 }
 
 
