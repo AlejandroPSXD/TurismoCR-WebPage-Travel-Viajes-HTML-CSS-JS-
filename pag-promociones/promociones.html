@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resetear.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="estilo.css">
     <title>Promociones</title>
     <link rel="icon" type="image/jpg" href="../Imagenes/IconoTCR.png">
@@ -23,59 +24,175 @@
             <li><a href="../pag-contactanos/contactanos.html">Contáctanos</a></li> 
         </ul>
     </nav>
-    <div class="content-header">
+    <div class="content-header-main">
         <h1>Promociones</h1>
+        <p>La mejor forma de encontrar las mejores promociones del país</p>
+        <a href="#Idsanjose" target="_self" tabindex="-1">San José</a>
+        <a href="#Idalajuela" target="_self" tabindex="-2">Alajuela</a>
+        <a href="#Idcartago" target="_self" tabindex="-3">Cartago</a>
+        <a href="#Idheredia" target="_self" tabindex="-4">Heredia</a>
+        <a href="#Idguanacaste" target="_self" tabindex="-5">Guanacaste</a>
+        <a href="#Idpuntarenas" target="_self" tabindex="-6">Puntarenas</a>
+        <a href="#Idlimon" target="_self" tabindex="-7">Limón</a>
     </div>
 
-    <div class="container">
-
-        <div class="card">
-            <img src="../Imagenes\Tortuguero.jpg">
-            <h4>Tortuguero</h4>
-            <p>Disfruta de un viaje a tortuguero ubicado en la provincia de Limón para 4 personas todo incluido por 4 dias y 3 noches</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Bosque quemado.jpeg">
-            <h4>Bosque Quemado</h4>
-            <p>Disfruta de un viaje turistico a el Bosque Quemado ubicado en la provincia de Cartago por todo el día con almuerzo incluido</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Rincon de la vieja.jpg">
-            <h4>Rincon de la vieja</h4>
-            <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
-            <a href=""></a>
-        </div>
-
-    </div>
 </header>   
 
 
 <body>
 
-    <!-- San Jose -->
-    <section class="banner-uno">
+    <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel__lista">
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\San José mapa.png" alt="Iglesia de Cartago">
+                    <p>San José</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Alajuela mapa.png" alt="Iglesia de Cartago">
+                    <p>Alajuela</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Cartago mapa.png" alt="Iglesia de Cartago">
+                    <p>Cartago</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Heredia mapa.png" alt="Iglesia de Cartago">
+                    <p>Heredia</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Guanacaste mapa.png" alt="Iglesia de Cartago">
+                    <p>Guanacaste</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Puntarenas mapa.png" alt="Iglesia de Cartago">
+                    <p>Puntarenas</p>
+                </div>
+
+                <div class="carousel_elemento">
+                    <img src="../Imagenes\Limon mapa.jpg" alt="Iglesia de Cartago">
+                    <p>Limón</p>
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+
+    </div>
+
+
+    <!-- Descripción ofertas -->
+    <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Turismo CR le presenta las mejores promociones del país</h1>
+            <p>Con nosotros descubriras ofertas increibles de cualquier zona del país con descuentos para no querer quedarse en casa y salir a visitar las bellezas que nos otorga nuestro bello país. <br><br>¿Qué esperas para aprovechar estas promociones?</p>
+        </div>
+
+    </section>
+
+    <!-- Destinos con mejores ofertas -->
+    <section class="Promociones-mejores-ofertas">
 
         <div class="content-header">
-            <h1>San Jose</h1>
+            <h1>Destinos con las mejores promociones en vigencia</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="../Imagenes\Tortuguerooff.jpg">
+                <h4>Tortuguero</h4>
+                <p>Disfruta de un viaje a tortuguero ubicado en la provincia de Limón para 4 personas todo incluido por 4 dias y 3 noches</p>
+                <a href=""></a>
+            </div>
+    
+            <div class="card">
+                <img src="../Imagenes\Bosque quemadooff.jpg">
+                <h4>Bosque Quemado</h4>
+                <p>Disfruta de un viaje turistico a el Bosque Quemado ubicado en la provincia de Cartago por todo el día con almuerzo incluido</p>
+                <a href=""></a>
+            </div>
+    
+            <div class="card">
+                <img src="../Imagenes\Rincon de la viejaoff.jpg">
+                <h4>Rincon de la vieja</h4>
+                <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
+                <a href=""></a>
+            </div>
+    
+        </div>
+
+    </section>
+
+    <!-- Descripción San José -->
+    <section class="descripciones">
+
+        <div class="content-header-descripcion">
+             <h1>Provincia de San José</h1>
+             <p>San José es la capital de la República de Costa Rica y la cabecera de la provincia homónima. Ubicada en el centro del país, específicamente sobre la meseta intervolcánica llamada Valle Central, y contenida en su totalidad por el cantón homónimo.</p>
+        </div>
+    
+     </section>
+
+    <!-- San Jose -->
+    <section class="banner-uno" id="Idsanjose">
+
+        <div class="content-header">
+            <h1>San José</h1>
         </div>
 
         <div class="container">
 
         <div class="card">
-            <img src="../Imagenes\Tortuguero.jpg">
-            <h4>San Jose</h4>
-            <p>Example</p>
+            <img src="../Imagenes\Parque de diversionesoff.jpg">
+            <h4>Parque de Diversiones</h4>
+            <p>Ven y aprovecha este grandioso descuento para poder disfrutar del Parque de Diversiones con toda la familia</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Galeria Namuoff.jpg">
+            <h4>Galeria Namú</h4>
+            <p>Tesoros de arte indígena y artesanía, las paredes deslumbran con esculturas, cerámica y máscaras ceremoniales Boruca</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Spirogyra butterfly gardenoff.jpg">
+            <h4>Spirogyra Butterfly Garden</h4>
+            <p>Ven a disfrutar de este lugar precioso, algo escondido pero que vale completamente la pena visitar en la provincia de San José</p>
             <a href=""></a>
         </div>
 
     </section>
 
+    <!-- Descripción Alajuela -->
+    <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Alajuela</h1>
+            <p>Alajuela es la provincia número 2 de Costa Rica, localizada en la parte septentrional del país. Limita al norte con la República de Nicaragua, al oeste con la Provincia de Guanacaste, al suroeste con la Provincia de Puntarenas, al sur con la Provincia de San José, y al este con la Provincia de Heredia.</p>
+        </div>
+    
+    </section>
+
     <!-- Alajuela -->
-     <section class="banner-dos">
+     <section class="banner-dos" id="Idalajuela">
 
         <div class="content-header">
             <h1>Alajuela</h1>
@@ -84,16 +201,41 @@
         <div class="container">
     
         <div class="card">
-             <img src="../Imagenes\Tortuguero.jpg">
-             <h4>Alajuela</h4>
-            <p>Example</p>
+             <img src="../Imagenes\Laguna de hule.jpg">
+             <h4>Laguna de Hule</h4>
+             <p>Disfruta del área de acampar, sendero transitable para bajar a la laguna y en el restaurante siempre todo delicioso, precios accesibles</p>
              <a href=""></a>
         </div>
+
+        <div class="card">
+            <img src="../Imagenes\Volcan poasoff.jpg">
+            <h4>Volcán Poas</h4>
+            <p>Tour de un día completo en Volcán Poas con café en Starbucks Farm desde San José, Alajuela, Heredia o Cartago</p>
+            <a href=""></a>
+       </div>
+
+        <div class="card">
+            <img src="../Imagenes\Pacuareoff.jpg">
+            <h4>Río Pacuare</h4>
+            <p>Ven y experimenta el auténtico deporte de aventura del río. Rafting a lo largo del emocionante Pacuare que lo llevará al corazón profundo de Costa Rica</p>
+        <a href=""></a>
+
+   </div>
     
      </section>
 
-     <!-- Cartago -->
-    <section class="banner-tres">
+    <!-- Descripción Cartago -->
+     <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Cartago</h1>
+            <p>Cartago es una de las siete provincias de Costa Rica. Se encuentra enclavada en el centro del país, sin acceso a las costas. Limita al norte y al este con Limón, al oeste y al sur con San José. </p>
+        </div>
+
+     </section>
+
+    <!-- Cartago -->
+    <section class="banner-tres" id="Idcartago">
 
         <div class="content-header">
             <h1>Cartago</h1>
@@ -102,16 +244,40 @@
         <div class="container">
 
         <div class="card">
-            <img src="../Imagenes\Cartago Iglesia.jpg">
-            <h4>Cartago</h4>
-            <p>Example</p>
+            <img src="../Imagenes\Sanatorio duranoff.jpg">
+            <h4>Sanatorio Durán</h4>
+            <p>Disfruta de una experiencia innolvidable visitando y descubriendo las estructuras del famoso Sanatorio Durán ubicado en la provincia de Cartago</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Bosque quemadooff.jpg">
+            <h4>Bosque Quemado</h4>
+            <p>Disfruta de un viaje turistico a el Bosque Quemado ubicado en la provincia de Cartago por todo el día con almuerzo incluido</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Lago de cachioff.jpg">
+            <h4>Lago de Cachí</h4>
+            <p>Ven a disfrutar de las bellas vistas y el bello clima que se encuentran en este hermoso lago ubicado en la provincia de Cartago</p>
             <a href=""></a>
         </div>
 
     </section>
 
-     <!-- Heredia -->
-     <section class="banner-cuatro">
+    <!-- Descripción Heredia -->
+     <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Heredia</h1>
+            <p>Heredia es una provincia de Costa Rica, localizada en la parte norte-central del país. Al norte limita con Nicaragua, al este con la provincia de Limón, al sur con la provincia de San José y al oeste con la provincia de Alajuela. </p>
+        </div>
+    
+     </section>
+
+    <!-- Heredia -->
+     <section class="banner-cuatro" id="Idheredia">
 
         <div class="content-header">
             <h1>Heredia</h1>
@@ -120,16 +286,40 @@
          <div class="container">
     
         <div class="card">
-             <img src="../Imagenes\parquebrauliocarrillofull.jpg">
-             <h4>Heredia</h4>
-             <p>Example</p>
+             <img src="../Imagenes\Kidnaziaoff.jpg">
+             <h4>Kidnazia</h4>
+             <p>Ven a disfrutar de KidZania la cual es una ciudad interactiva para niños de 4 a 14 años, que combina inspiración, diversión y aprendizaje</p>
              <a href=""></a>
          </div>
+
+         <div class="card">
+            <img src="../Imagenes\Ojo de aguaoff.jpg">
+            <h4>Ojo de Agua</h4>
+            <p>Ven a disfrutar de este parque acuático animado con varias piscinas al aire libre, una cascada y un lago con alquiler de botes</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Granja de burros de portaloff.jpg">
+            <h4>Granja de Burros de Portal</h4>
+            <p>Es una granja de contacto donde podemos interactuar con los animales domésticos tenemos la oportunidad de darles su alimento y disfrutar de ellos</p>
+            <a href=""></a>
+        </div>
     
       </section>
 
+    <!-- Descripción Guanacaste -->
+     <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Guanacaste</h1>
+            <p>Guanacaste es la provincia número 5 de Costa Rica, localizada en el extremo noroeste del país. Limita al norte con la República de Nicaragua, al este con la Provincia de Alajuela, al sur con la Provincia de Puntarenas y al oeste con el océano Pacífico.</p>
+        </div>
+
+      </section>
+
     <!-- Guanacaste -->
-    <section class="banner-cinco">
+    <section class="banner-cinco" id="Idguanacaste">
 
         <div class="content-header">
             <h1>Guanacaste</h1>
@@ -137,17 +327,41 @@
 
         <div class="container">
 
+            <div class="card">
+                <img src="../Imagenes\Rincon de la viejaoff.jpg">
+                <h4>Rincon de la vieja</h4>
+                <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
+                <a href=""></a>
+            </div>
+
         <div class="card">
-            <img src="../Imagenes\Rincon de la vieja.jpg">
-            <h4>Guanacaste</h4>
-            <p>Example</p>
+            <img src="../Imagenes\Parque nacional palo verdeoff.jpg">
+            <h4>Parque Nacional Palo Verde</h4>
+            <p>Descubre todas las zonas y bellezas naturales que te ofrecen el Parque Nacional Palo Verde (niños menores de 3 años no pagan)</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Volcan tenoriooff.jpg">
+            <h4>Volcan Tenorio</h4>
+            <p>Descubre las bellas vistas obtenidas desde el Volcan Tenorio, además de poder disfrutar de las cataratas que se encuentran al rededor de este</p>
             <a href=""></a>
         </div>
 
     </section>
 
+    <!-- Descripción Puntarenas -->
+     <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Puntarenas</h1>
+            <p>Puntarenas es provincia número 6 de Costa Rica, ubicada en su zona occidental y abarcando la mayor parte de la costa Pacífica del país. Limita con las provincias de Guanacaste, Alajuela, San José, Limón y con Panamá.</p>
+        </div>
+    
+     </section>
+
     <!-- Puntarenas -->
-    <section class="banner-seis">
+    <section class="banner-seis" id="Idpuntarenas">
 
         <div class="content-header">
             <h1>Puntarenas</h1>
@@ -156,16 +370,42 @@
         <div class="container">
     
         <div class="card">
-            <img src="../Imagenes\Isla-Tortuga.jpg">
-            <h4>Puntarenas</h4>
-            <p>Example</p>
+            <img src="../Imagenes\Isla tortugaoff.jpg">
+            <h4>Isla Tortuga</h4>
+            <p>Vení a conocer la Isla Tortuga con toda la familia, donde aplica el descuento para ¡TODOS!, ubicada en la bella provincia de Puntarenas</p>
             <a href=""></a>
         </div>
+
+        <div class="card">
+            <img src="../Imagenes\Santuario de lapasoff.jpg">
+            <h4>Santuario de Lapas</h4>
+            <p>Ven a disfrutar el Santuario de Lapas con toda la familia, (niños menores de 6 años no pagan) oferta valida hasta el 15 de Agosto del 2022 </p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Ballena infocenteroff.jpg">
+            <h4>Ballena infocenter</h4>
+            <p>Disfruta de este viaje turistico y ven a conocer las ballenas de cerca, una atracción natural que no te puedes perder</p>
+            <a href=""></a>
+        </div>
+
+        
     
     </section>
 
-     <!-- Limón -->
-     <section class="banner-siete">
+    <!-- Descripción Limón -->
+     <section class="descripciones">
+
+        <div class="content-header-descripcion">
+            <h1>Provincia de Limón</h1>
+            <p>Limón es una provincia de Costa Rica, en el extremo oriental del país. Limita al norte con la República de Nicaragua, al noreste con el Mar Caribe, al oeste con Heredia, Cartago y San José, al suroeste con Puntarenas y al sureste con Panamá.</p>
+        </div>
+    
+     </section>
+
+    <!-- Limón -->
+     <section class="banner-siete" id="Idlimon">
 
         <div class="content-header">
             <h1>Limón</h1>
@@ -174,108 +414,64 @@
         <div class="container">
     
         <div class="card">
-            <img src="../Imagenes\Tortuguero.jpg">
-            <h4>Limón</h4>
-            <p>Example</p>
+            <img src="../Imagenes\Parque nacional cahuitaoff.jpg">
+            <h4>Parque Nacional Cahuita</h4>
+            <p>Disfruta de un viaje al Parque Nacional Cahuita (niños menores de 3 años no pagan) ubicado en Puerto viejo de la provincia de Limón</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Santuario de perezososoff.jpg">
+            <h4>Santuario de perezosos</h4>
+            <p>Visita el santuario de perezosos con 4 personas y aprovechá este sorprentende descuento, ubicado en la provincia de Limón</p>
+            <a href=""></a>
+        </div>
+
+        <div class="card">
+            <img src="../Imagenes\Tortuguerooff.jpg">
+            <h4>Tortuguero</h4>
+            <p>Disfruta de un viaje a tortuguero ubicado en la provincia de Limón para 4 personas todo incluido por 4 dias y 3 noches</p>
             <a href=""></a>
         </div>
     
     </section>
 
 
-
-            
-
-    <div class="container">
-
-        <div class="card">
-            <img src="../Imagenes\Tortuguero.jpg">
-            <h4>Tortuguero</h4>
-            <p>Disfruta de un viaje a tortuguero ubicado en la provincia de Limón para 4 personas todo incluido por 4 dias y 3 noches</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Bosque quemado.jpeg">
-            <h4>Bosque Quemado</h4>
-            <p>Disfruta de un viaje turistico a el Bosque Quemado ubicado en la provincia de Cartago por todo el día con almuerzo incluido</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Rincon de la vieja.jpg">
-            <h4>Rincon de la vieja</h4>
-            <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Tortuguero.jpg">
-            <h4>Tortuguero</h4>
-            <p>Disfruta de un viaje a tortuguero ubicado en la provincia de Limón para 4 personas todo incluido por 4 dias y 3 noches</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Bosque quemado.jpeg">
-            <h4>Bosque Quemado</h4>
-            <p>Disfruta de un viaje turistico a el Bosque Quemado ubicado en la provincia de Cartago por todo el día con almuerzo incluido</p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Rincon de la vieja.jpg">
-            <h4>Rincon de la vieja</h4>
-            <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
-            <a href=""></a>
-        </div>
-
-        <div class="card">
-            <img src="../Imagenes\Rincon de la vieja.jpg">
-            <h4>Rincon de la vieja</h4>
-            <p>Disfruta de un viaje turistico a el Volcan Rincon de la Vieja ubicado en la provincia de Guanacaste por todo el día </p>
-            <a href=""></a>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="../pag-promociones\app.js"></script>
 
 </body>
 
-<footer>
-
-<div class="footer-links">
-    <div class="footer-container">
-        <ul>
-            <li>
+<!--::::Pie de Pagina::::::-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
                 <a href="#">
-                    <h3>Tittle One</h3>
+                    <img src="../Imagenes/IconoTCR.png" alt="Logo de TCR">
                 </a>
-            </li>
-            <li>
-                <a href="#">Blockchain</a>
-            </li>  
-            <li>
-                <a href="#">Blockchain</a>
-            </li>  
-            <li>
-                <a href="#">Blockchain</a>
-            </li>  
-            <li>
-                <a href="#">Blockchain</a>
-            </li>  
-            <li>
-                <a href="#">Blockchain</a>
-            </li>  
-            <li>
-                <a href="#">Blockchain</a>
-            </li>    
-        </ul>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Sobre Nosotros</h2>
+            <p>Grupo de jóvenes estudiantes inspirados por una mezcla entre la tecnología y la naturaleza de
+                nuestro hermoso y biodiverso país.
+            </p>
+        </div>
 
+        <div class="box">
+            <h2>Síguenos</h2>
+            <div class="red-social">
+                <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="http://www.youtube.com" class="fa fa-youtube"></a>
+            </div>
+        </div>
     </div>
-
-</div>
-
-
-
-
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Turismo CR</b> - Todos los Derechos Reservados.</small>
+    </div>
 </footer>
 </html>

@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
-html, body{
-    margin: 0;
-    padding: 0;
-}
 
-* {
-    box-sizing: border-box;
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
 }
 
 .main-header {
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.342)),
         url("../Imagenes/Bosque.jpg");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     font-family: 'Dosis', sans-serif;
     position: relative;
     overflow: hidden;
+    margin-bottom: 60px;
 }
 
 .main-nav {
@@ -70,6 +69,66 @@ background: #4141ef;
                 color 0.3s ease-in;
 }
 
+/* --> Empieza scroll bar <-- */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+/* -->  Termina scroll bar <-- */
+
+.content-header-main {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.content-header-main h1 {
+    font-size: 7rem;
+
+}
+
+.content-header-main p {
+    font-size: 1.5rem;
+    margin: 15px 30px;
+    margin-bottom: 30px;
+
+    
+}
+
+.content-header-main a {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
+}
+
+.content-header-main a:hover,
+.content-header-main:active  {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+}
+
+
 .content-header {
     color: #fff;
     position: absolute;
@@ -95,29 +154,42 @@ background: #4141ef;
 .content-header p {
     font-size: 1.5rem;
     margin: 15px 30px;
+    margin-bottom: 100px;
 }
 
 
-.content-header a {
-    display: inline-block;
-    width: 200px;
-    padding: 8px;
-    color: #fff;
-    border: 2px solid rgb(255, 255, 255);
+.descripciones {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.content-header-descripcion {
+    color: rgb(107, 107, 107);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    outline: none;
-    text-decoration: none;
-    transition: background-color 0.2s ease-out,
-                color 0.2s ease-out;
+    font-family: 'Dosis', sans-serif;
+
 }
 
-.content-header a:hover,
-.content-header:active  {
-    background-color: rgba(255, 255, 255, 0.13);
-    color: #fff;
-    transition: background-color 0.3s ease-in,
-                color 0.3s ease-in;
+.descripciones h1 {
+    font-size: 1.5rem;
+    margin: 15px 30px;
+    margin-bottom: 10px;
+
+
 }
+
+.descripciones p {
+    font-size: 1.5rem;
+    margin: 15px 30px;
+
+}
+
 
 .container {
     width: 100%;
@@ -183,11 +255,62 @@ background: #4141ef;
 
 }
 
+.carousel__contenedor {
+    position: relative;
+    width: 90%;
+    right: -5%;
+    height: 100%;
+}
+
+.carousel_elemento {
+    margin-left: 10px;
+}
+
+.carousel_elemento p {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    height: 50px;
+    color: rgb(107, 107, 107);
+}
+
+
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 40px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: rgba(54, 53, 53, 0.986);
+    opacity: 20;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+    opacity: 100%;
+
+}
+
+.carousel__anterior {
+    left: -30px
+}
+
+.carousel__siguiente {
+    right: -30px
+}
+
+
+
 .banner-uno {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/San jose Iglesia.jpg");
+        url("../Imagenes/San jose fondo.jpg");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -201,7 +324,7 @@ background: #4141ef;
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/San jose Iglesia.jpg");
+        url("../Imagenes/Alajuela fondo.png");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -229,7 +352,7 @@ background: #4141ef;
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/parquebrauliocarrillofull.jpg");
+        url("../Imagenes/Heredia fondo.JPG");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,7 +380,7 @@ background: #4141ef;
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/Isla-Tortuga.jpg");
+        url("../Imagenes/Puntarenas fondo.jpg");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -271,7 +394,7 @@ background: #4141ef;
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/Tortuguero.jpg");
+        url("../Imagenes/Limon fondo.jpg");
         background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -279,4 +402,109 @@ background: #4141ef;
     position: relative;
     overflow: hidden;
 
+}
+
+
+.Promociones-mejores-ofertas {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url("../Imagenes/Mejores-promociones.jpg");
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #000000f3;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 25px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Alinear horizontal */
+    align-items: center;
+    /* Alinear vertical */
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+    /* Tamaño de la imagen */
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    /* Sobre nosotros */
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    /* Párrafo */
+    color: #efefef;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    /* Iconos de links */
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    /* ancho */
+    height: 45px;
+    /* alto */
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    /* Separacion entre iconos */
+    background-color: #00000079;
+    /* Fondo del icono */
+    text-align: center;
+    transition: all 300ms ease;
+    /*transicion para el hover*/
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(0, 119, 255);
+}
+
+.pie-pagina .grupo-2 {
+    /*Área de Derechos Reservados*/
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    /*Texto de DerRer*/
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+
+    /*Hacerlo Respoonsive*/
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
