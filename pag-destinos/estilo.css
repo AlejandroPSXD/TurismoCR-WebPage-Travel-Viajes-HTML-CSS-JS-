@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 /* --> Valores iniciales <--*/
-:root{
-    --main-color:#8e44ad;
-    --black:#222;
-    --white:#fff;
-    --light-black:#777;
-    --light-white:#fff9;
-    --dark-bg:rgba(0,0,0,.7);
-    --light-bg:#eee;
-    --border:.1rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
- }
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -40,6 +40,7 @@ html {
 * {
     box-sizing: border-box;
 }
+
 /* --> Terminan Valores iniciales <--*/
 
 
@@ -53,8 +54,9 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: lightgreen;
+    background-color: var(--main-color);
 }
+
 /* -->  Termina scroll bar <-- */
 
 
@@ -111,16 +113,16 @@ ul li a:active {
 
 
 /* --> Empieza el heading <-- */
-.packages {
+.paquetes {
     padding: 5rem 10%;
 }
 
 @keyframes fadeIn {
-    0%{
-       transform: scale(0);
-       opacity: 0;
+    0% {
+        transform: scale(0);
+        opacity: 0;
     }
- }
+}
 
 .heading {
     background-size: cover !important;
@@ -139,22 +141,22 @@ ul li a:active {
     text-shadow: var(--text-shadow);
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: var(--black);
     margin-top: 1rem;
-    color:var(--white);
+    color: var(--white);
     font-size: 1.7rem;
-    padding:1rem 3rem;
+    padding: 1rem 3rem;
     cursor: pointer;
- }
+}
 
 
- .btn:hover{
+.btn:hover {
     background: var(--main-color);
- }
+}
 
-.heading-title {
+.titulo-encabezado {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 6rem;
@@ -162,71 +164,70 @@ ul li a:active {
     color: var(--black);
 }
 
-.packages .box-container {
+.paquetes .container-lugares {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 
-.packages .box-container .box {
+.paquetes .container-lugares .box {
     border: var(--border);
     box-shadow: var(--box-shadow);
     background: var(--white);
     display: none;
 }
 
-.packages .box-container .box:nth-child(1),
-.packages .box-container .box:nth-child(2),
-.packages .box-container .box:nth-child(3),
-.packages .box-container .box:nth-child(4),
-.packages .box-container .box:nth-child(5),
-.packages .box-container .box:nth-child(6) {
+.paquetes .container-lugares .box:nth-child(1),
+.paquetes .container-lugares .box:nth-child(2),
+.paquetes .container-lugares .box:nth-child(3),
+.paquetes .container-lugares .box:nth-child(4),
+.paquetes .container-lugares .box:nth-child(5),
+.paquetes .container-lugares .box:nth-child(6) {
     display: inline-block;
 }
 
-.packages .box-container .box:hover .image img {
+.paquetes .container-lugares .box:hover .image img {
     transform: scale(1.1);
 }
 
-.packages .box-container .box .image {
+.paquetes .container-lugares .box .image {
     height: 25rem;
     overflow: hidden;
 }
 
-.packages .box-container .box .image img {
+.paquetes .container-lugares .box .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
 }
 
-.packages .box-container .box .content {
+.paquetes .container-lugares .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.packages .box-container .box .content h3 {
+.paquetes .container-lugares .box .content h3 {
     font-size: 2.5rem;
     color: var(--black);
 }
 
-.packages .box-container .box .content p {
+.paquetes .container-lugares .box .content p {
     font-size: 1.5rem;
     color: var(--light-black);
     line-height: 2;
     padding: 1rem 0;
 }
 
-.packages .load-more {
+.paquetes .cargar-mas {
     text-align: center;
     margin-top: 2rem;
 }
 
+/* --> Terminan los destinos <-- */
 
-/* --> Termina el heading <-- */
-
-/* --> Empieza el Container 2 <-- */
-.container2 {
+/* --> Empieza el ContainerCR <-- */
+.containerCR {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -243,7 +244,7 @@ ul li a:active {
 
 }
 
-.container2 .card {
+.containerCR .card {
     width: 530px;
     height: auto;
     border-radius: 8px;
@@ -255,25 +256,25 @@ ul li a:active {
     background-color: rgba(0, 0, 0, 0.473);
 }
 
-.container2 .card:hover {
+.containerCR .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container2 .card img {
+.containerCR .card img {
     width: 530px;
     height: 270px;
     margin-bottom: 10px;
 }
 
-.container2 .card h4 {
+.containerCR .card h4 {
     font-weight: 600;
     color: #fff;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-.container2 .card p {
+.containerCR .card p {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
@@ -281,63 +282,51 @@ ul li a:active {
     letter-spacing: 0.03em;
 }
 
-.container2 .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
-    padding: 1000px 1000px;
-}
-/* --> Termina el Container2 <-- */
+/* --> Termina el ContainerCR <-- */
 
 
 /* --> Empieza el Inspírate <-- */
 .inspirate {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
     color: var(--main-color);
+    background: #fff;
+    text-align: justify;
 }
 
-.inspirate .inspiratetxt h2 {
+.inspirate-img {
+    background: #000000;
+    border-radius: 20px;
+    float: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.inspirate-textos {
+    padding: 10px 10px;
     font-family: "DM Serif Text", serif;
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
     line-height: 52px;
-    text-align: center;
+    text-align: left;
 }
 
-.inspirate .inspiratetxt p {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+.inspirate-textos p{
+    padding: 10px 10px;
+    font-weight: 900;
     font-size: 20px;
-    line-height: 52px;
-    text-align: center;
 }
+
 /* --> Termina el Inspírate <-- */
 
 
-.container2 .card .p {
-    font-weight: bold;
-}
-/*Encabezado logo, destinos, inicio,etc
-.tarjetas { 
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/Monteverde.jpg");
-        background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    font-family: 'Dosis', sans-serif;
-    position: relative;
-    overflow: hidden;
-}*/
-
-.tarjetas { 
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),
-        url("../Imagenes/Monteverde.jpg");
-        background-repeat: no-repeat;
+/* --> Empiezan las tarjetas Centrales <-- */
+.tarjetasCentrales {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../Imagenes/fondoCentrales.jpg");
+    background-color: #3498db;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: 'Dosis', sans-serif;
@@ -345,8 +334,7 @@ ul li a:active {
     overflow: hidden;
 }
 
-/* Tarjetas (Parte central) */
-.content-tarjet {
+.content-tarjetCentrales {
     color: var(--white);
     position: relative;
     padding-top: 150px;
@@ -355,23 +343,14 @@ ul li a:active {
     text-align: center;
 }
 
-.content-tarjet h1 {
-    /*Destinos*/
+.content-tarjetCentrales h1 {
+    /*Provincias*/
     font-size: 34px;
-    height: 400;
+    height: 10px;
     text-align: center;
 }
 
-.content-tarjet a:hover,
-.content-tarjet:active {
-    background-color: rgba(255, 255, 255, 0.13);
-    color: #fff;
-    transition: background-color 0.3s ease-in,
-        color 0.3s ease-in;
-}
-
-/*Container 1*/
-.container {
+.containerCentrales {
     width: 100%;
     max-width: 1200px;
     height: 110%;
@@ -381,9 +360,93 @@ ul li a:active {
     justify-content: center;
     margin: auto;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
 }
 
-.container .card {
+.containerCentrales .card {
+    width: 250px;
+    height: 415px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.containerCentrales .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerCentrales .card img {
+    width: 330px;
+    height: 320px;
+    margin-bottom: 10px;
+}
+
+.containerCentrales .card h4 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.containerCentrales .card a {
+    padding: 0rem 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    margin-top: 500px;
+}
+
+/* --> Terminan las tarjetas centrales <-- */
+
+/* --> Empiezan las tarjetas costeras <-- */
+.tarjetasCosteras {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../Imagenes/fondoCosteras.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-tarjetCosteras {
+    color: var(--white);
+    position: relative;
+    padding-top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-tarjetCosteras h1 {
+    /*Provincias*/
+    font-size: 34px;
+    height: 10px;
+    text-align: center;
+}
+
+.containerCosteras {
+    width: 100%;
+    max-width: 1200px;
+    height: 110%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+}
+
+.containerCosteras .card {
     width: 330px;
     height: auto;
     border-radius: 8px;
@@ -395,18 +458,18 @@ ul li a:active {
     background-color: rgba(0, 0, 0, 0.473);
 }
 
-.container .card:hover {
+.containerCosteras .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container .card img {
+.containerCosteras .card img {
     width: 330px;
     height: 220px;
     margin-bottom: 10px;
 }
 
-.container .card h4 {
+.containerCosteras .card h4 {
     font-weight: 600;
     color: #fff;
     font-size: 1.5rem;
@@ -414,21 +477,17 @@ ul li a:active {
 
 }
 
-.container .card p {
+.containerCosteras .card a {
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
     color: #fff;
     letter-spacing: 0.03em;
     font-weight: bold;
+    padding-bottom: 15px;
 }
 
-.container .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
-    padding: 1000px 1000px;
-}
+/* --> Terminan las tarjetas costeras <-- */
 
 
 /*:::::Pie de Pagina*/

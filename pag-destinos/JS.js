@@ -1,8 +1,8 @@
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
+let loadMoreBtn = document.querySelector('.paquetes .cargar-mas .btn');
 let currentItem = 3;
 
 loadMoreBtn.onclick = () =>{
-   let boxes = [...document.querySelectorAll('.packages .box-container .box')];
+   let boxes = [...document.querySelectorAll('.paquetes .container-lugares .box')];
    for (var i = currentItem; i < currentItem + 3; i++){
       boxes[i].style.display = 'inline-block';
    };
